@@ -1,0 +1,8 @@
+[target.armv7-unknown-linux-musleabihf]
+runner = "./run-remote.sh pi@navio.local"
+rustflags = [
+  "-C", "linker=rust-lld",
+]
+
+[build]
+target = "armv7-unknown-linux-musleabihf"
